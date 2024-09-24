@@ -1,0 +1,20 @@
+// @mixin font ($color: yellow, $fontW: 100) {
+//     font-size: 1.1em;
+//     font-weight: bold;
+//     color: $color;
+// }
+
+// @mixin link($link, $hover, $active, $visited) {
+
+//     text-decoration: none;
+
+//     &:hover {
+//         color: $hover;
+//     }
+
+//     &:active {
+//         color: $active;
+//     }
+
+//     @content;
+// }

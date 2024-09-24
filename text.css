@@ -1,0 +1,26 @@
+.brandbox__item {
+    position: relative;
+    width: 200px;
+    height: 72px;
+    border-radius: 5%;
+    margin-right: 50px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.brandbox__img {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    background-color: beige;
+    width: 40%;
+    height: 40%;
+}
+
+
+.brandbox__pagination {
+    position: relative;
+    margin-top: 5%;
+}

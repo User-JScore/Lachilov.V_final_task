@@ -1,0 +1,208 @@
+@import "variable";
+@import "fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'TT Lakes';
+    box-sizing: border-box;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+    &:hover, &:active {
+        color: #7E7E82;
+    }
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+
+// menu
+
+
+
+.container{
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.497);
+
+    .container__blur {
+        
+        width: 100%;
+        height: 100%;
+    }
+
+    .container__menu-hamburger {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-width: 320px;
+        height: 100%;
+        background-color: white;
+
+        * {
+            font-size: 1.02em;
+            font-weight: 500;
+        }
+    }
+}
+
+.container__header-menu-hamburger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 70px;
+
+    button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $buttonColor;
+
+        &:hover, &:active {
+            background: lighten($buttonColor, $amount: 15%);
+        }
+
+        img {
+            width: 60%;
+            height: 60%;
+        }
+    }
+
+    .container__header-item-logo {
+        display: inline-flex;
+        background-color: white;
+
+        img {
+            width: 97px;
+            height: 51px;
+        }
+    }
+}
+
+.container__menu-list {
+    padding: 5% 0;
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            display: inline-flex;
+            padding: 2% 5%;
+
+            &:hover, &:active {
+                border-left: 4px solid #41F6D7;
+            }
+        }
+    }
+}
+
+.container__menu-footer {
+    width: 320px;
+    padding: 0 5%;
+    position: relative;
+    
+    div {
+        margin-bottom: 3%;
+    }
+
+    .container__footer-buttons {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: $buttonColor;
+            border-radius: 50%;
+
+            &:hover, &:active {
+                background: lighten($buttonColor, $amount: 15%);
+            }
+
+            img {
+                width: 60%;
+                height: 60%;
+            }
+        }
+    }
+
+    .container__footer-email {
+        .container__email-link{
+            &:hover, &:active {
+                border-bottom: 4px solid #41F6D7;
+            }
+        }
+    }
+
+    .container__footer-tel {
+        .container__tel-link {
+            font-size: 1.2em;
+            font-weight: bold;
+
+            &:hover, &:active {
+                border-bottom: 4px solid #41F6D7;
+            }
+        }
+    }
+
+    .container__footer-languages {
+        a {
+            &:hover, &:active {
+                border-bottom: 4px solid #41F6D7;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1440px) {
+
+    .container {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+    .full__container {
+        position: absolute;
+        left: 320px;
+        padding-right: 320px;
+    }
+
+}
+
+
+
+// csslist for js
+.container__selection {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
