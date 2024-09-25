@@ -1,12 +1,21 @@
 {
   "dependencies": {
-    "swiper": "^11.1.14"
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "swiper": "^11.1.14",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
   },
   "name": "8.5",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
   "author": "Lachilov V.",
   "license": "ISC",
-  "description": ""
+  "description": "https://user-jscore.github.io/Lachilov.V_final_task/",
+  "keywords": []
 }
